@@ -167,10 +167,10 @@ namespace TacitusLogger.Destinations.RabbitMq.IntegrationTests
             // Act 
             Logger logger = (Logger)LoggerBuilder.Logger().NewLogGroup("group1").ForAllLogs()
                                                                                     .RabbitMq()
-                                                                                    .WithConnection(connection)
-                                                                                    .WithAddress(exchangeName, exchangeType, routingKey)
-                                                                                    .WithSimpleTemplateLogSerializer() 
-                                                                                    .Add()
+                                                                                        .WithConnection(connection)
+                                                                                        .WithAddress(exchangeName, exchangeType, routingKey)
+                                                                                        .WithSimpleTemplateLogText() 
+                                                                                        .Add()
                                                                                     .BuildLogger();
             // Assert
             var logGroup = (LogGroup)logger.GetLogGroup("group1");
