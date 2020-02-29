@@ -1,0 +1,9 @@
+{
+  "rabbitmq": {
+    "host": "rabbitmq host",
+    "port": "rabbitmq port",
+    "user": "rabbitmq username",
+    "password": "username password",
+    "objectPrefixes": "TacitusLogger.Destinations.RabbitMq.IntTests."
+  }
+}
