@@ -2,9 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.5</TargetFramework>
-    <Version>0.2.0</Version>
+    <Version>0.2.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Khanlar Mammadov</Authors>
+    <Description>Extension destination for TacitusLogger that sends logs to the RabbitMQ exchanges.
+Attention: TacitusLogger.Destinations.RabbitMq is currently in Alpha phase. This means you should not use it in any production code.</Description>
+    <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/khanlarmammadov/TacitusLogger.Destinations.RabbitMq</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/khanlarmammadov/TacitusLogger.Destinations.RabbitMq</RepositoryUrl>
+    <PackageReleaseNotes>Attention: TacitusLogger.Destinations.RabbitMq is currently in Alpha phase. This means you should not use it in any production code.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.5\TacitusLogger.Destinations.RabbitMq.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
